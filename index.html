@@ -1,0 +1,204 @@
+
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elias Huuhtanen — Portfolio</title>
+  <meta name="description" content="Elias Huuhtasen portfolio: minusta, opinnot, kokemus ja projektit." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Kiinteä ylävalikko -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#hero">Elias Huuhtanen</a>
+      <nav>
+        <a href="#minusta">Minusta</a>
+        <a href="#opinnot">Opinnot</a>
+        <a href="#kokemus">Kokemus</a>
+        <a href="#projektit">Projektit</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Vaihda teema" title="Vaihda teema">🌓</button>
+    </div>
+  </header>
+
+  <!-- HERO: iso PORTFOLIO -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-title">PORTFOLIO</h1>
+      <p class="hero-subtitle">Opiskelija • Oulu</p>
+      <a class="btn" href="#minusta">Tutustu minuun</a>
+    </div>
+    <div class="hero-gradient"></div>
+  </section>
+
+  <main>
+    <!-- MINUSTA -->
+    <section id="minusta" class="section">
+      <div class="container grid two">
+        <div>
+          <h2>Minusta</h2>
+          <p>
+            Hei! Olen <strong>Elias Tapio Huuhtanen</strong>, utelias ja tavoitteellinen
+            opiskelija Oulusta. Pidän ongelmanratkaisusta, siististä käyttöliittymäsuunnittelusta
+            sekä selkeästä koodista. Etsin mahdollisuuksia, joissa voin oppia uutta ja tuottaa
+            konkreettista arvoa.
+          </p>
+          <ul class="bullets">
+            <li>Kiinnostuksen kohteet: web-kehitys, UX/UI, data & automaatio</li>
+            <li>Vahvuudet: järjestelmällisyys, tiimityö, nopea oppiminen</li>
+            <li>Tavoitteet: rakentaa laadukkaita projekteja ja kehittyä täysstack-kehittäjänä</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn" href="#projektit">Katso projekteja</a>
+            <a class="btn secondary" href="mailto:etunimi.sukunimi@example.com">Ota yhteyttä</a>
+          </div>
+        </div>
+        <div class="card profile">
+          <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1000&auto=format&fit=crop" alt="Profiilikuva" />
+          <div class="profile-info">
+            <h3>Elias Huuhtanen</h3>
+            <p>Opiskelija • Oulu</p>
+            <div class="links">
+              <a href="#" aria-label="GitHub" title="GitHub">GitHub</a>
+              <a href="#" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="CV" title="CV">CV (PDF)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINNOT -->
+    <section id="opinnot" class="section alt">
+      <div class="container">
+        <h2>Opinnot</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Oppilaitos / Tutkinto (YYYY–YYYY)</h3>
+              <p>Kuvaus: pääaine / kurssit, joissa painotus (esim. web-teknologiat, ohjelmistotuotanto, data-analytiikka).</p>
+              <ul class="tags">
+                <li>HTML/CSS/JS</li>
+                <li>React</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Kurssi / Sertifikaatti</h3>
+              <p>Lyhyt kuvaus opituista taidoista ja suoritusvuodesta.</p>
+              <ul class="tags">
+                <li>Git & GitHub</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOKEMUS -->
+    <section id="kokemus" class="section">
+      <div class="container">
+        <h2>Kokemus</h2>
+        <div class="grid two">
+          <article class="card job">
+            <h3>Rooli @ Yritys (YYYY–YYYY)</h3>
+            <p>Keskeiset vastuut, teknologiat ja saavutukset. Kerro vaikuttavuudesta (numerot + konkreettiset esimerkit).</p>
+            <ul class="tags">
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>Cloud</li>
+            </ul>
+          </article>
+          <article class="card job">
+            <h3>Harjoittelu / Projekti (YYYY)</h3>
+            <p>Lyhyt kuvaus mitä teit, mitä opit ja mitä syntyi.</p>
+            <ul class="tags">
+              <li>UI-refaktorointi</li>
+              <li>Testaus</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKTIT -->
+    <section id="projektit" class="section alt">
+      <div class="container">
+        <h2>Projektit</h2>
+        <div class="grid three">
+          <article class="card project">
+            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop" alt="Projektin kuva" />
+            <div class="project-body">
+              <h3>Projektin nimi</h3>
+              <p>Lyhyt kuvaus: ongelma → ratkaisu → tulos. Linkitä repo ja demo.</p>
+              <div class="links">
+                <a href="#" class="btn small">Demo</a>
+                <a href="#" class="btn small secondary">Repo</a>
+              </div>
+              <ul class="tags">
+                <li>React</li>
+                <li>API</li>
+                <li>Vite</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card project">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Projektin kuva" />
+            <div class="project-body">
+              <h3>Projektin nimi 2</h3>
+              <p>Lyhyt kuvaus projektista ja roolistasi.</p>
+              <div class="links">
+                <a href="#" class="btn small">Sivu</a>
+                <a href="#" class="btn small secondary">Repo</a>
+              </div>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Pandas</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card project">
+            <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1200&auto=format&fit=crop" alt="Projektin kuva" />
+            <div class="project-body">
+              <h3>Projektin nimi 3</h3>
+              <p>Kuvaa teknologiat ja tehdyt ratkaisut lyhyesti.</p>
+              <div class="links">
+                <a href="#" class="btn small">Live</a>
+                <a href="#" class="btn small secondary">Repo</a>
+              </div>
+              <ul class="tags">
+                <li>Node</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Elias Huuhtanen — Portfolio</p>
+      <div class="footer-links">
+        <a href="#hero">Ylös</a>
+        <a href="mailto:etunimi.sukunimi@example.com">Sähköposti</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
