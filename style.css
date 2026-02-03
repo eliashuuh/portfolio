@@ -148,10 +148,22 @@ p { margin: 0 0 14px; }
   background: linear-gradient(120deg, var(--brand), var(--brand-2));
   color: white; text-decoration: none; border-radius: 12px;
   padding: 10px 16px; font-weight: 700; border: none; cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 15px 40px rgba(108, 169, 255, 0.3);
+}
+.btn:active {
+  transform: scale(0.98);
 }
 .btn.secondary {
   background: transparent; color: var(--text);
   border: 1px solid var(--border);
+}
+.btn.secondary:hover {
+  background: color-mix(in srgb, var(--border) 40%, transparent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 .btn.small { padding: 8px 12px; font-size: 14px; }
 
